@@ -1,0 +1,115 @@
+
+
+/* Footer Section */
+
+.footer-sec{
+    position: absolute;
+    bottom: 150px;
+    right: 0;
+    left: 0;
+    /* border: 2px solid red; */
+    margin: 30px 30px;
+}
+
+.footer-sec div{
+    position: relative;
+}
+
+.footer-sec .about-list-sec,
+.footer-sec .documentation-sec{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    color: var(--main-color--);
+}
+
+.footer-sec .about-list-sec div{
+    display: flex;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.footer-sec .about-list-sec div ul{
+    list-style: none;
+    margin: 0;
+    margin-right: 100px;
+}
+
+.footer-sec .about-list-sec div ul li{
+    margin-bottom: 12px;
+}
+
+.footer-sec .about-list-sec div ul li a{
+    text-decoration: none;
+    color: var(--text-color--);
+    font-weight: 400;
+    transition: color 0.3s text-decoration 0.3s ease-in-out;
+}
+
+
+.footer-sec .about-list-sec div ul li a:hover,
+.footer-sec .documentation-sec div span a:hover{
+    color: var(--main-color--);
+    text-decoration: underline;
+}
+
+
+.footer-sec div .social-links{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.footer-sec div .social-links button{
+    margin-left: 10px;
+    font-size: 17px;
+    padding: 11px 13px 10px 13px;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+
+.footer-sec div .social-links button:hover{
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.footer-sec div .social-links button i{
+    color: var(--main-color--);
+    font-size: 15px;
+}
+
+.footer-sec .separator{
+    width: 100%;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-bottom: 40px;
+}
+
+
+.footer-sec .documentation-sec{
+    font-size: 14px;
+    color: var(--text-color--);
+}
+
+.footer-sec .documentation-sec div span{
+    margin-right: 14px;
+}
+
+.footer-sec .documentation-sec div span a{
+    text-decoration: none;
+    color: var(--text-color--);
+}
+
+.search-background .footer-sec{
+    position: absolute;
+    top: 1650px;
+}
+
+
+
+
+

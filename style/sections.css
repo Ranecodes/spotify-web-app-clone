@@ -1,0 +1,587 @@
+
+
+/* Main Section */
+
+.main-body{
+    position: absolute;
+    top: 60px;
+    right: 0;
+    left: 0;
+    /* border: 2px solid red; */
+    box-sizing: border-box;
+    margin: 30px 30px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 10px;
+}
+
+
+/* Library Info Section */
+
+.library-section-info,
+.top-genres-info{
+    margin-bottom: 10px;
+    height: 280px;
+}
+
+.genre div img{
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+    object-position: bottom;
+    box-shadow: 5px 1px 5px rgba(0,0,0,0.6);
+}
+
+.greeting-text,
+.top-genres{
+    color: white;
+    font-size: 39px;
+    margin-bottom: 20px;
+}
+
+.genre{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 25px;
+    row-gap: 15px;
+}
+
+.genre div{
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    transition: background-color 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.genre div:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.genre div span{
+    color: var(--main-color--);
+    padding-left: 15px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+}
+
+
+.genre div button,
+.music-sec .genre-list div button,
+.artist-sec .genre-list div button{
+    background-color:  rgb(30, 215, 96);
+    border: none;
+    font-size: 22px;
+    border-radius: 50px;
+    padding: 13px 15px 10px 19px;
+    box-shadow: 1px 8px 8px rgba(0,0,0,0.3);
+}
+
+.genre div button{
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    position: absolute;
+    right: 20px;
+}
+
+.genre div:hover button{
+    opacity: 1;
+}
+
+.genre div button:hover,
+.music-sec .genre-list div button:hover,
+.artist-sec .genre-list div button:hover{
+    padding: 14px 16px 11px 20px;
+}
+
+
+/* Music Section */
+
+.music-sec div,
+.artist-sec div{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 20px;
+    color: var(--main-color--);
+}
+
+.music-sec div h2,
+.artist-sec div h2{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.music-sec div h2:hover,
+.artist-sec div h2:hover{
+    text-decoration: underline;
+}
+
+section div .action-text{
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--text-color--);
+    cursor: pointer;
+}
+
+section div .action-text:hover{
+    text-decoration: underline;
+    color: var(--text-color--);
+}
+
+.music-sec .genre-list,
+.artist-sec .genre-list{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    column-gap: 20px;
+}
+
+.music-sec .genre-list div,
+.artist-sec .genre-list div{
+    display: flex;
+    flex-direction: column; 
+    background-color: var(--bg-main-color--);
+    width: 144px;
+    padding: 15px;
+    border-radius: 5px;
+    font-weight: 700;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.music-sec .genre-list div button,
+.artist-sec .genre-list div button{
+    position: absolute;
+    right: 23px;
+    bottom: 97px;
+    opacity: 0;
+    transition: opacity 0.2s ease-out;
+}
+
+.music-sec .genre-list div:hover,
+.artist-sec .genre-list div:hover{
+    background-color: var(--secondary-color--);
+}
+
+.music-sec .genre-list div:hover button,
+.artist-sec .genre-list div:hover button{
+    opacity: 1;
+    bottom: 100px;
+}
+
+.music-sec .genre-list div img{
+    width: 144px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.music-sec .genre-list div p,
+.artist-sec .genre-list div p{
+    display: inline-block;
+    font-size: 14px;
+}
+
+.music-sec .genre-list div span,
+.artist-sec .genre-list div span{
+    color: var(--text-color--);
+    font-size: 12px;
+    font-weight: 500;
+    padding-top: 5px;
+}
+
+.music-sec .genre-list div span span,
+.artist-sec .genre-list div span span{
+    text-decoration: none;
+}
+
+.music-sec .genre-list div span span:hover,
+.artist-sec .genre-list div span span:hover{
+    text-decoration: underline;
+}
+
+
+/* Artist Section */
+
+.artist-sec .genre-list div img{
+    width: 144px;
+    border-radius: 144px;
+    margin-bottom: 20px;
+}
+
+
+/* Search Main Section */
+
+.top-genres-info{
+    margin-bottom: 30px;
+}
+
+.top-genres{
+    font-size: 24px;
+}
+
+
+.genre-selection{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 25px;
+}
+
+.genre-selection div{
+    height: 220px;
+    position: relative;
+    border-radius: 6px;
+    border: none;
+    overflow: hidden;
+}
+
+.genre-selection div p{
+    position: absolute;
+    color: var(--main-color--);
+    font-weight: 700;
+    font-size: 37px;
+    top: 20px;
+    left: 30px;
+    letter-spacing: 1px;
+}
+
+.genre-selection img{
+    position: absolute;
+    width: 127px;
+    bottom: 0;
+    right: 0;
+    transform: rotate(25deg) translate(18%, -2%);
+}
+
+.genre-selection .afro,
+#party,
+#movies{
+    background-color: rgb(175,40,150);
+}
+
+.genre-selection .pop,
+#charts,
+#discover,
+#mood,
+#trending,
+#kids,
+#classical,
+#arab{
+    background-color: rgb(141,103,171);
+}
+
+.genre-selection .hip-hop{
+    background-color: rgba(186,93,7);
+}
+
+.genre-selection .rb,
+#new-releases,
+#soul,
+#dance,
+#latin,
+#alternative,
+#gaming{
+    background-color: rgb(220,20,140);
+}
+
+.music-sec .genre-catelog-sec{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    column-gap: 20px;
+}
+
+.music-sec .genre-catelog-sec div{
+    position: relative;
+    height: 180px;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.music-sec .genre-catelog-sec div h3{
+    position: absolute;
+    top: 17px;
+    left: 15px;
+    font-size: 24px;
+}
+
+
+.music-sec .genre-catelog-sec img{
+    position: absolute;
+    width: 100px;
+    bottom: 0;
+    right: 0;
+    transform: rotate(25deg) translate(18%, 3%);
+}
+
+
+#podcast{
+    background-color: rgb(76,133,119);
+}
+
+#made-for-you,
+#live-events,
+#sleep,
+#jazz,
+#higher,
+#folk,
+#blues{
+    background-color: rgb(10,35,66);
+}
+
+#frequency{
+    background-color: rgb(142, 114, 163);
+}
+
+#christian-gospel{
+    background-color: #4C8577;
+}
+
+#chill,
+#at-home,
+#instrumental,
+#ambient{
+    background-color: rgb(99,180,209);
+}
+
+#songwriter{
+    background-color: rgb(87,0,0);
+}
+
+#funk,
+#rock{
+    background-color: rgb(177,15,46);
+}
+
+#wellness{
+    background-color: rgb(222,124,90);
+}
+
+#summer{
+    background-color: rgb(243,177,85);
+}
+
+#focus{
+    background-color: rgb(76,59,77);
+}
+
+#workout{
+    background-color: rgb(153,241,213);
+}
+
+#decades{
+    background-color: rgb(206,93,27);
+}
+
+#caribbean{
+    background-color: rgb(7,108,231);
+}
+
+#christian-gospel{
+    background-color: rgb(66,149,250);
+}
+
+#travel{
+    background-color: rgb(16,58,110);
+}
+
+#equal,
+#league,
+#k-pop{
+    background-color: rgb(38,132,1);
+}
+
+#indie{
+    background-color: rgb(74,127,20);
+}
+
+#radar{
+    background-color: rgb(209,255,163);
+}
+
+#country{
+    background-color: rgb(203,64,18);
+}
+
+/* Playlist Section */
+.main-top-section{
+    background-color: var(--playlist-background-header);
+    display: flex;
+    flex-direction: row;
+    height: 30vh;
+    max-height: 500px;
+    min-height: 340px;
+    padding-left: 30px;
+    color: white;
+    line-height: 1.2;
+}
+
+.the-image{
+    height: 232px;
+    min-width: 232px;
+    width: 232px;
+}
+
+.the-image img{
+    padding-top: 80px;
+    height: 100%;
+    width: 100%;
+}
+
+.the-title{
+    display: flex;
+    flex-direction: column;
+    padding-top: 125px;
+    margin-left: 20px;
+}
+
+.the-title h2{
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.the-title h1{
+    font-size: 96px;
+}
+
+.playlist-details{
+    line-height: 1.8;
+    color: hsla(0,0%,100%,.7);
+}
+
+.playlist-details span{
+    color: white;
+}
+
+.number-of-likes a{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+
+.number-of-likes .duration-2{
+    color: hsla(0,0%,100%,.7);
+}
+
+.artist-link{
+    cursor: pointer;
+}
+
+.mid-bar-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* margin-top: 20px; */
+    margin-left: 20px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.mid-bar-section button{
+    border: none;
+    height: 70px;
+    width: 70px;
+}
+
+.play-button-green{
+    margin-right: 20px;
+}
+
+.play-button-green-itself{
+    background-color: #1ed760;
+    border-radius: 500px;
+}
+
+.play-button-green-itself svg{
+    height: 37px;
+    width: 37px;
+}
+
+.like-btn-playlist,
+.playlist-options{
+    background: transparent;
+    /* display: flex; */
+    color: hsla(0,0%,100%,.7);
+}
+
+.like-btn-playlist svg,
+.playlist-options svg{
+    fill: #b3b3b3;
+}
+
+.list-table{
+    border: 1px solid transparent;
+    outline: 0;
+    border-radius: 4px;
+}
+
+.top-of-list-container{
+    position: sticky;
+}
+
+.top-of-list{
+    /* border: 2px solid yellow; */
+    display: grid;
+    grid-template-columns: 10px 500px 400px 500px 0;
+    row-gap: 16px;
+    column-gap: 16px;
+    color: white;
+    margin-left: 35px;
+    margin-top: 10px;
+}
+
+.top-of-list span{
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #b3b3b3;
+    font-weight: 700;
+}
+
+.top-of-list .asterisk{
+    font-size: larger;
+    font-weight: 400;
+}
+
+.top-of-list svg{
+    margin-left: 120px;
+    fill: #b3b3b3;
+}
+
+.line{
+    margin-left: 35px;
+    margin-top: 10px;
+}
+
+
+#row-1{
+    display: grid;
+    grid-template-columns: 10px 500px 400px 500px 0;
+    row-gap: 16px;
+    column-gap: 16px;
+    color: white;
+    margin-left: 35px;
+    margin-top: 10px;
+    align-items: center;
+}
+
+.song-title-playlist{
+    display: flex;
+    flex-direction: column;
+}
+
+.song-container-playlist{
+    display: flex;
+    flex-direction: row;
+}
+
+#row-1 div{
+    font-size: 15px;
+    color: #b3b3b3;
+}

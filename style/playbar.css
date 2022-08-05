@@ -1,0 +1,248 @@
+
+
+/* Playbar Section */
+
+.footer{
+    font-family: 'Inter', sans-serif;
+    color: var(--main-color--);
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.now-playing-bar-container {
+    background-color: #181818;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.song-display{
+    display: flex;
+    flex-direction: row;
+    padding-left: 30px;
+}
+
+.song-pic img{
+    height: 70px;
+    width: 70px;
+    /* margin: 15px 20px; */
+}
+
+.song-pic{
+    position: relative;
+    padding-top: 15px;
+}
+
+.song-pic:hover button{
+    opacity: 1;
+}
+
+.button-on-pic{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #b3b3b3;
+    border-radius: 500px;
+    height: 30px;
+    width: 30px;
+    top: 20px;
+    right: 7px;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.button-on-pic:hover{
+    transform: scale(1.1);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+}
+
+.button-on-pic svg path{
+    fill: #b3b3b3;
+}
+
+.song-title-container{
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    padding-left: 30px;
+    line-height: 1.5;
+}
+
+.artist-playing{
+    color: #b3b3b3;
+}
+
+.like-button-container{
+    margin-left: 15px;
+    margin-top: 40px;
+    outline: none;
+}
+
+.like-button{
+    background: none;
+    color: hsla(0,0%,100%,.7);
+    cursor: pointer;
+    outline: none;
+}
+
+.like-button svg path{
+    fill: #181818;
+    stroke: white;
+    stroke-width: 2;
+}
+
+.like-button:focus{
+    border: none;
+    background: none;
+}
+
+.like-button:focus svg path{
+    fill: #1ed760;
+    fill-rule: initial;
+    stroke: none;
+}
+
+.pause-play-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.control-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 24px;
+    margin-bottom: 5px;
+}
+
+.control-buttons button{
+    height: 32px;
+    width: 32px;
+}
+
+.shuffle,
+.skip-back{
+    margin-right: 20px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+.shuffle svg,
+.skip-back svg,
+.skip-forward svg,
+.repeat svg{
+    height: 24px;
+    width: 24px;
+    fill: hsla(0,0%,100%,.7);
+}
+
+.skip-forward{
+    margin-right: 30px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.pause-play-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pause-play{
+    /* margin-right: 10px;
+    margin-left: 10px; */
+    position: relative;
+    border: none;
+    padding: 25px;
+    border-radius: 500px;
+    cursor: pointer;
+}
+
+.pause-play svg{
+    position: absolute;
+    top: 13px;
+    right: 12px;
+    height: 24px;
+    width: 24px;
+    /* padding-right: 10px;
+    padding-left: 10px; */
+}
+
+.skip-forward,
+.repeat{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.playback-bar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* border: 2px solid green; */
+}
+
+.playback-progressbar-container{
+    width: 700px;
+    background-color: hsla(0,0%,100%,.3);
+    border-radius: 15px;
+    height: 6px;
+}
+
+.playback-progressbar{
+    background-color: white;
+    width: 20%;
+    border-radius: 15px;
+    height: 7px;
+}
+
+.volume-section{
+    /* border: 2px solid yellow; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 300px;
+    gap: 25px;
+    margin-right: 40px;
+}
+
+.volume-bar-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.volume-bar-itself{
+    border-radius: 15px;
+}
+
+.track-list,
+.listening-selector,
+.volume-bar-icon,
+.expand-icon{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.track-list svg,
+.listening-selector svg,
+.volume-bar-icon svg,
+.expand-icon svg{
+    height: 24px;
+    width: 24px;
+    fill: hsla(0,0%,100%,.7);
+}
+
+.green-bar{
+    background-color: #1ed760;
+}
