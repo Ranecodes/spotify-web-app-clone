@@ -498,6 +498,11 @@ section div .action-text:hover{
     border-radius: 500px;
 }
 
+.play-button-green-itself:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
 .play-button-green-itself svg{
     height: 37px;
     width: 37px;
@@ -508,6 +513,14 @@ section div .action-text:hover{
     background: transparent;
     /* display: flex; */
     color: hsla(0,0%,100%,.7);
+}
+
+.like-btn-playlist svg:hover{
+    fill: white;
+}
+
+.playlist-options svg:hover{
+    fill: white;
 }
 
 .like-btn-playlist svg,
@@ -570,7 +583,7 @@ section div .action-text:hover{
     margin-top: 10px;
     align-items: center;
     position: relative;
-    border: 2px solid green;
+    /* border: 2px solid green; */
 }
 
 
@@ -619,4 +632,14 @@ section div .action-text:hover{
 
 .numbering:hover{
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' role='img' height='40' width='40' class='Svg-ytk21e-0 jAKAlG UIBT7E6ZYMcSDl1KL62g' viewBox='0 0 24 24'%3E%3Cpath d='M7.05 3.606l13.49 7.788a.7.7 0 010 1.212L7.05 20.394A.7.7 0 016 19.788V4.212a.7.7 0 011.05-.606z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+.song-description{
+    margin-left: 20px;
+    padding-bottom: 8px;
+}
+
+.main-title{
+    color: white;
+    font-size: larger;
 }
